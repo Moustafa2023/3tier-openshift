@@ -82,7 +82,11 @@ kubectl get svc
 Get the Route URL or LoadBalancer IP:
 kubectl get routes
 ###  6.Future Improvements
+
 Add monitoring with Prometheus + Grafana.
+
 Use Helm charts for easier deployment.
+
 Add CI/CD pipeline (GitHub Actions).
+
 Use ConfigMaps & Secrets for DB credentials.
