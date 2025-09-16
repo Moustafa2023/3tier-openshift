@@ -12,7 +12,7 @@ Quick usage (OpenShift Sandbox):
    oc new-project three-tier-demo
 
 2. Apply secret, PVC, DB, services and deployments:
-   oc apply -f k8s/namespace.yaml
+   oc apply -f k8s/namespace.yaml\n
    oc apply -n three-tier-demo -f k8s/secret.yaml
    oc apply -n three-tier-demo -f k8s/db-pvc.yaml
    oc apply -n three-tier-demo -f k8s/db-deployment.yaml
