@@ -12,18 +12,27 @@ Quick usage (OpenShift Sandbox):
    oc new-project three-tier-demo
 
 2. Apply secret, PVC, DB, services and deployments:
-   oc apply -f k8s/namespace.yaml\n
+   oc apply -f k8s/namespace.yaml
+   
    oc apply -n three-tier-demo -f k8s/secret.yaml
+   
    oc apply -n three-tier-demo -f k8s/db-pvc.yaml
+   
    oc apply -n three-tier-demo -f k8s/db-deployment.yaml
+   
    oc apply -n three-tier-demo -f k8s/db-service.yaml
+   
    oc apply -n three-tier-demo -f k8s/backend-deployment.yaml
+   
    oc apply -n three-tier-demo -f k8s/backend-service.yaml
+   
    oc apply -n three-tier-demo -f k8s/frontend-deployment.yaml
+   
    oc apply -n three-tier-demo -f k8s/frontend-service.yaml
+   
    oc apply -n three-tier-demo -f k8s/frontend-route.yaml
 
-3. Build & push images for frontend and backend to Docker Hub, then edit k8s YAMLs to replace <DOCKERHUB_USER> with your repo name.
+4. Build & push images for frontend and backend to Docker Hub, then edit k8s YAMLs to replace <DOCKERHUB_USER> with your repo name.
 
 Notes:
 - Replace <DOCKERHUB_USER> placeholders in k8s manifests with your Docker Hub username and pushed image tags.
