@@ -23,24 +23,43 @@ This project demonstrates how to deploy a **3-tier web application** (frontend, 
 ## 📂 Project Structure
 3-tier-app/
 ├── frontend/
+
 │ ├── app.py
+
 │ ├── requirements.txt
+
 │ └── Dockerfile
+
 ├── backend/
+
 │ ├── app.py
+
 │ ├── requirements.txt
+
 │ └── Dockerfile
+
 ├── db/
+
 │ └── init.sql
+
 ├── k8s/
+
 │ ├── frontend-deployment.yaml
+
 │ ├── backend-deployment.yaml
+
 │ ├── db-deployment.yaml
+
 │ ├── frontend-service.yaml
+
 │ ├── backend-service.yaml
+
 │ ├── db-service.yaml
+
 │ └── route.yaml
+
 └── README.md
+
 ## 🚀 How to Run
 
 ### 1. Clone Repo
