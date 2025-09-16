@@ -63,7 +63,6 @@ This project demonstrates how to deploy a **3-tier web application** (frontend, 
 ## 🚀 How to Run
 
 ### 1. Clone Repo
-```bash
 git clone https://github.com/<your-username>/<repo-name>.git
 cd <repo-name>
 ### 2. Build Docker Images
