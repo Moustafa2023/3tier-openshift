@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head><meta charset="utf-8"><title>3-Tier Demo - Frontend</title></head>
+  <body>
+    <h1>3-Tier Demo - Frontend</h1>
+    <p>Backend API URL (from env): {{ backend_url }}</p>
+    <button onclick="getItems()">Get items</button>
+    <pre id="out"></pre>
+    <script>
+      async function getItems(){
+        try{
+          const res = await fetch('{{ backend_url }}/api/items');
+          const data = await res.json();
+          document.getElementById('out').innerText = JSON.stringify(data, null, 2);
+        }catch(e){
+          document.getElementById('out').innerText = 'Error: '+e;
+        }
+      }
+    </script>
+  </body>
+</html>

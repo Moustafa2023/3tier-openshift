@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS items (id SERIAL PRIMARY KEY, name TEXT);
+INSERT INTO items (name) VALUES ('Hello from DB');
